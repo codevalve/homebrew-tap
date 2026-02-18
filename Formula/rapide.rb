@@ -11,7 +11,7 @@ class Rapide < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/codevalve/rapide/releases/download/v2.0.0/rapide_Darwin_x86_64.tar.gz"
-      sha256 "f1b16c179e2122b49d13aa859c1359627ff71a01f1210e225bbe956fb2bc07f9"
+      sha256 "78e583a6f7528075fa5a0b211f736a7ecbf0406263ae90bdef33ada7f3a368d2"
 
       def install
         bin.install "rapide"
@@ -19,7 +19,7 @@ class Rapide < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/codevalve/rapide/releases/download/v2.0.0/rapide_Darwin_arm64.tar.gz"
-      sha256 "d4422a27ff1f66276d17fb2d64d571d9e18fa23653eb70d86b4cc0f543e8ffb6"
+      sha256 "6f57affe86c3111bd216cc4764d4a65c4eabb58d6fb2284e489e976e82ab3b0d"
 
       def install
         bin.install "rapide"
@@ -30,14 +30,14 @@ class Rapide < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/codevalve/rapide/releases/download/v2.0.0/rapide_Linux_x86_64.tar.gz"
-      sha256 "de33b1a4303a79060515e770a131ea7980b800cf92a492801731eeb857bef980"
+      sha256 "b95478e2ae13a944354e2a10f38465f74fc36988540ddd4165b6f74e75527b16"
       def install
         bin.install "rapide"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/codevalve/rapide/releases/download/v2.0.0/rapide_Linux_arm64.tar.gz"
-      sha256 "0f004729c0786c7c67a901d5f16c4ca747af715a6fb355c16c5b696020e674ab"
+      sha256 "ca32c3da0d2e4396a0129fd980574ed78e16c0d2e1af11b41bd99eac1cdc450e"
       def install
         bin.install "rapide"
       end
