@@ -5,21 +5,21 @@
 class Rapide < Formula
   desc "Lightweight CLI for Bullet Journal-style rapid logging."
   homepage "https://github.com/codevalve/rapide"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codevalve/rapide/releases/download/v0.1.4/rapide_Darwin_x86_64.tar.gz"
-      sha256 "3329e7bd118cb3f1a5e82bb32cc1df198e06cbbfb3528e17401f99ef8d38737c"
+      url "https://github.com/codevalve/rapide/releases/download/v0.1.5/rapide_Darwin_x86_64.tar.gz"
+      sha256 "e976fc01e87f94ede8d8ccf093ed15909b41e5a8a369d9711f386f2fedd009ce"
 
       def install
         bin.install "rapide"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codevalve/rapide/releases/download/v0.1.4/rapide_Darwin_arm64.tar.gz"
-      sha256 "51ef44006c7c8ed45dbd1957f41d190227fe801ef77f969fa43ab0c69a2a5b1a"
+      url "https://github.com/codevalve/rapide/releases/download/v0.1.5/rapide_Darwin_arm64.tar.gz"
+      sha256 "b1fe67a8b6d4684183311f0d7369b5aa19061c344c64956c1fa8345fe86ba940"
 
       def install
         bin.install "rapide"
@@ -29,15 +29,15 @@ class Rapide < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codevalve/rapide/releases/download/v0.1.4/rapide_Linux_x86_64.tar.gz"
-      sha256 "80dbb71e186abd0b73ec277ba2e6578fa231eed0cbc78f03fcf6ebc7a8d94f8f"
+      url "https://github.com/codevalve/rapide/releases/download/v0.1.5/rapide_Linux_x86_64.tar.gz"
+      sha256 "00a3a7879b3b99ed59327dd102dab864faf97c18ccd80a6e7db799492f470770"
       def install
         bin.install "rapide"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codevalve/rapide/releases/download/v0.1.4/rapide_Linux_arm64.tar.gz"
-      sha256 "ebb28783a9f7d0b3f2fe558a6c4919773a5bbc6e1c516cf8129438f63934af95"
+      url "https://github.com/codevalve/rapide/releases/download/v0.1.5/rapide_Linux_arm64.tar.gz"
+      sha256 "c0601bf6b067b7027bc8ec181ed78a0c1e361f5d3b4cdefdbf01d24cbf2899be"
       def install
         bin.install "rapide"
       end
