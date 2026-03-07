@@ -5,21 +5,21 @@
 class Rapide < Formula
   desc "Lightweight CLI for Bullet Journal-style rapid logging."
   homepage "https://github.com/codevalve/rapide"
-  version "2.6.0"
+  version "2.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codevalve/rapide/releases/download/v2.6.0/rapide_Darwin_x86_64.tar.gz"
-      sha256 "4f05492707f9cdf14fb6d8ec2b1385267ceb12e4c8e026e8d7ffa90421eedb58"
+      url "https://github.com/codevalve/rapide/releases/download/v2.6.1/rapide_Darwin_x86_64.tar.gz"
+      sha256 "b688e7cea8f936e732ddbece7ec2a77c359e17fda9e030e7d56d58b2b1272e0d"
 
       define_method(:install) do
         bin.install "rapide"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codevalve/rapide/releases/download/v2.6.0/rapide_Darwin_arm64.tar.gz"
-      sha256 "f8799f730c6ec1a9236a451aebb823926b7c897f1750b476053ba3aebeb41572"
+      url "https://github.com/codevalve/rapide/releases/download/v2.6.1/rapide_Darwin_arm64.tar.gz"
+      sha256 "1c7573549ee215d3dc5f01d2bbd7b145f1369a55713ec879797f44dc13a1bdb3"
 
       define_method(:install) do
         bin.install "rapide"
@@ -29,15 +29,15 @@ class Rapide < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codevalve/rapide/releases/download/v2.6.0/rapide_Linux_x86_64.tar.gz"
-      sha256 "3e484609ff3c1c5a2ce619fbe00d31b33ceaa07b888b1b6c221b84787e60fbf8"
+      url "https://github.com/codevalve/rapide/releases/download/v2.6.1/rapide_Linux_x86_64.tar.gz"
+      sha256 "0783af52a78bae49c40daccb1f18d51f9277af95415bca1bf584821b34bfe5e0"
       define_method(:install) do
         bin.install "rapide"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codevalve/rapide/releases/download/v2.6.0/rapide_Linux_arm64.tar.gz"
-      sha256 "6ffda9f6563bcfac476bedafd5edc4f6ce34937687dd6e4d612eccaf7316dfbd"
+      url "https://github.com/codevalve/rapide/releases/download/v2.6.1/rapide_Linux_arm64.tar.gz"
+      sha256 "b8284a2edc775c5297173282b8bc8f6d68f1267c72b8dcc0ecb0ecf0d6f972db"
       define_method(:install) do
         bin.install "rapide"
       end
